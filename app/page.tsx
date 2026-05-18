@@ -10,10 +10,9 @@ export default async function Home() {
       <section className="hero">
         <div>
           <div className="eyebrow">Crusader Kings III Türkçe mod çevirileri</div>
-          <h1>CK3AI çeviri ilerleme panosu</h1>
+          <h1>Crusader Kings III Türkçe Mod Çevirileri</h1>
           <p className="lead">
-            Modların çeviri durumu, dosya bazlı ilerleme, token kontrol uyarıları ve Steam Workshop bağlantıları
-            burada herkese açık metadata olarak yayınlanır.
+            Yapay zekâ destekli ve insan kontrolünden geçen CK3 mod çevirilerinin ilerleme durumu.
           </p>
         </div>
         <div className="detail-panel">
@@ -22,6 +21,11 @@ export default async function Home() {
           <Progress value={summary.percent} />
           <p className="muted">Son güncelleme: {formatDate(status.updated_at)}</p>
         </div>
+      </section>
+
+      <section className="notice">
+        Bu sayfa yalnızca çeviri ilerleme durumunu gösterir. Çeviri metinleri, API anahtarları, yerel dosya
+        yolları ve ham AI çıktıları yayınlanmaz.
       </section>
 
       <section className="stats" aria-label="Genel özet">
@@ -37,9 +41,13 @@ export default async function Home() {
           <strong>{formatNumber(summary.mods_translating)}</strong>
           <span>Çevriliyor</span>
         </div>
+        <div className="stat warning">
+          <strong>{formatNumber(summary.mods_needs_review)}</strong>
+          <span>Kontrol gerekiyor</span>
+        </div>
         <div className="stat">
           <strong>{formatNumber(summary.token_errors)}</strong>
-          <span>Token kontrol uyarısı</span>
+          <span>Token uyarısı</span>
         </div>
       </section>
 

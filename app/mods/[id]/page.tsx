@@ -23,17 +23,20 @@ export default async function ModDetail({ params }: { params: Promise<{ id: stri
           <div className="eyebrow">Mod detayı</div>
           <h1>{project.name}</h1>
           <p className="lead">
-            Dosya bazlı satır ilerlemesi ve token kontrol durumu. Bu sayfa çeviri metinlerini, promptları,
-            local pathleri veya provider kullanım detaylarını yayınlamaz.
+            {project.description || "Bu mod için public registry açıklaması henüz eklenmedi."}
           </p>
+          <div className="meta hero-meta">
+            <span>{project.category || "Kategori belirtilmedi"}</span>
+            <span>Workshop ID: {project.workshop_id || "Yok"}</span>
+          </div>
         </div>
         <div className="detail-panel">
-          <StatusBadge status={project.status} />
+          <StatusBadge status={project.status} tokenErrors={project.token_errors} />
           <h2>{project.percent}%</h2>
           <Progress value={project.percent} />
           <div className="meta">
             <span>Son güncelleme: {formatDate(project.last_updated)}</span>
-            <span>Workshop ID: {project.workshop_id || "Yok"}</span>
+            <span>{formatNumber(project.token_errors)} token uyarısı</span>
           </div>
           {project.steam_url ? (
             <p style={{ marginTop: 16 }}>
@@ -60,10 +63,10 @@ export default async function ModDetail({ params }: { params: Promise<{ id: stri
             </thead>
             <tbody>
               {project.files.map((file) => (
-                <tr key={file.filename}>
+                <tr className={file.token_errors > 0 ? "row-warning" : undefined} key={file.filename}>
                   <td>{file.filename}</td>
                   <td>
-                    <StatusBadge status={file.status} />
+                    <StatusBadge status={file.status} tokenErrors={file.token_errors} />
                   </td>
                   <td>
                     {file.percent}% <Progress value={file.percent} />

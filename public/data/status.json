@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-05-18T08:11:33+00:00",
+  "updated_at": "2026-05-18T22:43:40+00:00",
   "summary": {
     "mods_total": 6,
     "mods_completed": 3,
     "mods_translating": 2,
+    "mods_needs_review": 1,
     "files_total": 34,
     "files_completed": 23,
     "rows_total": 12581,
@@ -13,148 +14,12 @@
   },
   "projects": [
     {
-      "id": "community_flavor_pack",
-      "name": "Community Flavor Pack",
-      "workshop_id": "2220098919",
-      "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2220098919",
-      "status": "translating",
-      "percent": 65,
-      "files_total": 11,
-      "files_completed": 2,
-      "rows_total": 655,
-      "rows_translated": 424,
-      "token_errors": 0,
-      "last_updated": "2026-05-17T11:19:22+00:00",
-      "files": [
-        {
-          "filename": "CFP_l_english.yml",
-          "status": "completed",
-          "percent": 100,
-          "rows_total": 405,
-          "rows_translated": 405,
-          "empty_rows": 0,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_artifacts.yml",
-          "status": "completed",
-          "percent": 100,
-          "rows_total": 19,
-          "rows_translated": 19,
-          "empty_rows": 0,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_artifacts_events.yml",
-          "status": "planned",
-          "percent": 0,
-          "rows_total": 35,
-          "rows_translated": 0,
-          "empty_rows": 35,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_backgrounds.yml",
-          "status": "planned",
-          "percent": 0,
-          "rows_total": 27,
-          "rows_translated": 0,
-          "empty_rows": 27,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_earrings.yml",
-          "status": "planned",
-          "percent": 0,
-          "rows_total": 16,
-          "rows_translated": 0,
-          "empty_rows": 16,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_game_rules.yml",
-          "status": "planned",
-          "percent": 0,
-          "rows_total": 28,
-          "rows_translated": 0,
-          "empty_rows": 28,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_hair_beards.yml",
-          "status": "planned",
-          "percent": 0,
-          "rows_total": 40,
-          "rows_translated": 0,
-          "empty_rows": 40,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_hands.yml",
-          "status": "planned",
-          "percent": 0,
-          "rows_total": 16,
-          "rows_translated": 0,
-          "empty_rows": 16,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_missing_vanilla.yml",
-          "status": "planned",
-          "percent": 0,
-          "rows_total": 15,
-          "rows_translated": 0,
-          "empty_rows": 15,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_necklaces.yml",
-          "status": "planned",
-          "percent": 0,
-          "rows_total": 21,
-          "rows_translated": 0,
-          "empty_rows": 21,
-          "token_errors": 0
-        },
-        {
-          "filename": "CFP_l_english_special.yml",
-          "status": "planned",
-          "percent": 0,
-          "rows_total": 33,
-          "rows_translated": 0,
-          "empty_rows": 33,
-          "token_errors": 0
-        }
-      ]
-    },
-    {
-      "id": "workshop_3716251917",
-      "name": "Workshop 3716251917",
-      "workshop_id": "3716251917",
-      "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3716251917",
-      "status": "translating",
-      "percent": 0,
-      "files_total": 1,
-      "files_completed": 0,
-      "rows_total": 449,
-      "rows_translated": 2,
-      "token_errors": 0,
-      "last_updated": "2026-05-10T20:15:06+00:00",
-      "files": [
-        {
-          "filename": "cmd_plus_l_english.yml",
-          "status": "translating",
-          "percent": 0,
-          "rows_total": 449,
-          "rows_translated": 2,
-          "empty_rows": 447,
-          "token_errors": 0
-        }
-      ]
-    },
-    {
       "id": "viet_events",
       "name": "VIET Events",
+      "short_name": "VIET",
+      "description": "Crusader Kings III için olay, kültür ve rol yapma içerikleri ekleyen kapsamlı etkinlik modu.",
+      "category": "Etkinlik / Rol Yapma",
+      "priority": 1,
       "workshop_id": "2227658180",
       "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2227658180",
       "status": "needs_review",
@@ -322,8 +187,131 @@
       ]
     },
     {
-      "id": "workshop_2452585382",
-      "name": "Workshop 2452585382",
+      "id": "community_flavor_pack",
+      "name": "Community Flavor Pack",
+      "short_name": "CFP",
+      "description": "Crusader Kings III için kültürel kıyafet, zırh ve görsel çeşitlilik ekleyen popüler mod.",
+      "category": "Görsel / Kültürel İçerik",
+      "priority": 2,
+      "workshop_id": "2220098919",
+      "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2220098919",
+      "status": "translating",
+      "percent": 65,
+      "files_total": 11,
+      "files_completed": 2,
+      "rows_total": 655,
+      "rows_translated": 424,
+      "token_errors": 0,
+      "last_updated": "2026-05-18T22:11:30+00:00",
+      "files": [
+        {
+          "filename": "CFP_l_english.yml",
+          "status": "completed",
+          "percent": 100,
+          "rows_total": 405,
+          "rows_translated": 405,
+          "empty_rows": 0,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_artifacts.yml",
+          "status": "completed",
+          "percent": 100,
+          "rows_total": 19,
+          "rows_translated": 19,
+          "empty_rows": 0,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_artifacts_events.yml",
+          "status": "planned",
+          "percent": 0,
+          "rows_total": 35,
+          "rows_translated": 0,
+          "empty_rows": 35,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_backgrounds.yml",
+          "status": "planned",
+          "percent": 0,
+          "rows_total": 27,
+          "rows_translated": 0,
+          "empty_rows": 27,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_earrings.yml",
+          "status": "planned",
+          "percent": 0,
+          "rows_total": 16,
+          "rows_translated": 0,
+          "empty_rows": 16,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_game_rules.yml",
+          "status": "planned",
+          "percent": 0,
+          "rows_total": 28,
+          "rows_translated": 0,
+          "empty_rows": 28,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_hair_beards.yml",
+          "status": "planned",
+          "percent": 0,
+          "rows_total": 40,
+          "rows_translated": 0,
+          "empty_rows": 40,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_hands.yml",
+          "status": "planned",
+          "percent": 0,
+          "rows_total": 16,
+          "rows_translated": 0,
+          "empty_rows": 16,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_missing_vanilla.yml",
+          "status": "planned",
+          "percent": 0,
+          "rows_total": 15,
+          "rows_translated": 0,
+          "empty_rows": 15,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_necklaces.yml",
+          "status": "planned",
+          "percent": 0,
+          "rows_total": 21,
+          "rows_translated": 0,
+          "empty_rows": 21,
+          "token_errors": 0
+        },
+        {
+          "filename": "CFP_l_english_special.yml",
+          "status": "planned",
+          "percent": 0,
+          "rows_total": 33,
+          "rows_translated": 0,
+          "empty_rows": 33,
+          "token_errors": 0
+        }
+      ]
+    },
+    {
+      "id": "ethnicities_portraits_expanded",
+      "name": "Ethnicities & Portraits Expanded",
+      "short_name": "EPE",
+      "description": "Karakter portreleri ve etnik görünüm çeşitliliğini genişleten kapsamlı görsel mod.",
+      "category": "Görsel / Portre",
+      "priority": 3,
       "workshop_id": "2452585382",
       "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2452585382",
       "status": "completed",
@@ -347,8 +335,35 @@
       ]
     },
     {
+      "id": "workshop_3716251917",
+      "name": "Workshop 3716251917",
+      "priority": 9999,
+      "workshop_id": "3716251917",
+      "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3716251917",
+      "status": "translating",
+      "percent": 0,
+      "files_total": 1,
+      "files_completed": 0,
+      "rows_total": 449,
+      "rows_translated": 2,
+      "token_errors": 0,
+      "last_updated": "2026-05-10T20:15:06+00:00",
+      "files": [
+        {
+          "filename": "cmd_plus_l_english.yml",
+          "status": "translating",
+          "percent": 0,
+          "rows_total": 449,
+          "rows_translated": 2,
+          "empty_rows": 447,
+          "token_errors": 0
+        }
+      ]
+    },
+    {
       "id": "workshop_3340544163",
       "name": "Workshop 3340544163",
+      "priority": 9999,
       "workshop_id": "3340544163",
       "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3340544163",
       "status": "completed",
@@ -392,6 +407,7 @@
     {
       "id": "workshop_3718999968",
       "name": "Workshop 3718999968",
+      "priority": 9999,
       "workshop_id": "3718999968",
       "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3718999968",
       "status": "completed",

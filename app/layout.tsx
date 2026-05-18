@@ -3,8 +3,8 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CK3AI Çeviri İlerlemesi",
-  description: "CK3AI mod çeviri projeleri için halka açık ilerleme panosu.",
+  title: "CK3 Türkçe Çeviri Takip Merkezi",
+  description: "Crusader Kings III mod çevirileri için halka açık ilerleme panosu.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <div className="nav-inner">
               <Link className="brand" href="/">
                 <span className="sigil" aria-hidden="true" />
-                <span>CK3AI Public Progress</span>
+                <span>CK3 Türkçe Çeviri Takip Merkezi</span>
               </Link>
               <nav className="nav-links" aria-label="Ana menü">
                 <Link href="/">Modlar</Link>

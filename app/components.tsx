@@ -2,8 +2,13 @@ import Link from "next/link";
 import { formatNumber, statusLabels } from "./data";
 import type { ProjectStatus, ProjectStatusRecord } from "./types";
 
-export function StatusBadge({ status }: { status: ProjectStatus }) {
-  return <span className={`badge ${status}`}>{statusLabels[status]}</span>;
+export function StatusBadge({ status, tokenErrors = 0 }: { status: ProjectStatus; tokenErrors?: number }) {
+  return (
+    <span className={`badge ${status}`}>
+      {statusLabels[status]}
+      {status === "needs_review" && tokenErrors > 0 ? ` · ${formatNumber(tokenErrors)} token` : ""}
+    </span>
+  );
 }
 
 export function Progress({ value }: { value: number }) {
@@ -23,10 +28,13 @@ export function ModCard({ project }: { project: ProjectStatusRecord }) {
           <h3>
             <Link href={`/mods/${project.id}`}>{project.name}</Link>
           </h3>
-          <p className="muted">Workshop ID: {project.workshop_id || "Yok"}</p>
+          <p className="muted">{project.category || "Kategori belirtilmedi"}</p>
         </div>
-        <StatusBadge status={project.status} />
+        <StatusBadge status={project.status} tokenErrors={project.token_errors} />
       </div>
+      <p className="card-description">
+        {project.description || "Bu mod için public registry açıklaması henüz eklenmedi."}
+      </p>
       <Progress value={project.percent} />
       <div className="meta">
         <span>{project.percent}%</span>
@@ -36,7 +44,17 @@ export function ModCard({ project }: { project: ProjectStatusRecord }) {
         <span>
           {formatNumber(project.files_completed)} / {formatNumber(project.files_total)} dosya
         </span>
-        <span>{formatNumber(project.token_errors)} token hatası</span>
+        <span>{formatNumber(project.token_errors)} token uyarısı</span>
+      </div>
+      <div className="actions">
+        {project.steam_url ? (
+          <a className="button secondary" href={project.steam_url} rel="noreferrer" target="_blank">
+            Steam Workshop
+          </a>
+        ) : null}
+        <Link className="button" href={`/mods/${project.id}`}>
+          Detaylar
+        </Link>
       </div>
     </article>
   );

@@ -2,19 +2,32 @@ export default function About() {
   return (
     <section className="about">
       <div className="eyebrow">Proje notu</div>
-      <h1>CK3AI hakkında</h1>
+      <h1>Hakkında</h1>
+      <h2>Bu proje nedir?</h2>
       <p>
-        CK3AI, Crusader Kings III mod localization dosyalarını Türkçeye çevirirken CK3 tokenlarını, anahtarlarını
-        ve dosya yapısını korumaya odaklanan bir iş akışıdır.
+        CK3 Türkçe Çeviri Takip Merkezi, Crusader Kings III mod çevirilerinin hangi aşamada olduğunu paylaşmak
+        için hazırlanmış public ilerleme sayfasıdır. Burada yalnızca mod adı, açıklama, dosya sayısı, satır
+        ilerlemesi ve kontrol uyarıları yer alır.
       </p>
+      <h2>Çeviri yöntemi</h2>
       <p>
-        Çeviri yöntemi yapay zeka desteklidir: satırlar batch halinde çevrilir, token-safe masking ve doğrulama
-        kontrollerinden geçirilir, ardından insan kontrolüyle düzenlenebilir. AI çıktısı final karar olarak kabul
-        edilmez; token hataları ve kontrol gerektiren dosyalar ayrıca işaretlenir.
+        CK3 localization satırları batch halinde işlenir. Sistem anahtarları, oyun içi tokenları ve biçimlendirme
+        işaretlerini koruyarak taslak çeviri üretir; ardından satır ve dosya bazında doğrulama raporları oluşturur.
       </p>
+      <h2>AI destekli, insan kontrolünde</h2>
       <p>
-        Bu public site yalnızca ilerleme metadatası yayınlar. API key, prompt metni, raw AI output, local absolute
-        path veya çeviri dosyalarının tam içeriği burada bulunmaz.
+        Yapay zekâ çeviriyi hızlandırmak için kullanılır, final karar verici değildir. Token hatası bulunan dosyalar
+        tamamlanmış görünse bile “Kontrol gerekiyor” olarak işaretlenir ve insan incelemesine ayrılır.
+      </p>
+      <h2>Steam Workshop bağlantıları</h2>
+      <p>
+        Mod kartlarındaki Steam Workshop bağlantıları ilgili mod sayfasına gider. Bu bağlantılar kullanıcıların hangi
+        modun takip edildiğini kolayca doğrulaması için eklenmiştir.
+      </p>
+      <h2>Gizlilik ve güvenlik</h2>
+      <p>
+        Public JSON yalnızca güvenli metadata içerir. Çeviri metinleri, API anahtarları, promptlar, ham AI çıktıları,
+        provider kullanım detayları ve yerel dosya yolları yayınlanmaz.
       </p>
     </section>
   );

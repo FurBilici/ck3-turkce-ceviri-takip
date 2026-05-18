@@ -9,6 +9,8 @@
   --text: #f3ead7;
   --muted: #b8aa8d;
   --danger: #e17961;
+  --danger-bg: rgba(225, 121, 97, 0.14);
+  --warning: #f0a34f;
   --green: #75b987;
   --blue: #7fa7d8;
 }
@@ -131,7 +133,7 @@ h3 {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
   margin: 22px 0 32px;
 }
@@ -147,6 +149,11 @@ h3 {
 
 .stat {
   padding: 18px;
+}
+
+.stat.warning {
+  border-color: rgba(225, 121, 97, 0.4);
+  background: linear-gradient(180deg, rgba(74, 37, 25, 0.72), rgba(28, 18, 15, 0.94));
 }
 
 .stat strong {
@@ -168,6 +175,14 @@ h3 {
 
 .card {
   padding: 18px;
+}
+
+.card-description {
+  min-height: 70px;
+  margin-top: 12px;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 14px;
 }
 
 .card-head {
@@ -196,7 +211,10 @@ h3 {
 }
 
 .badge.needs_review {
-  color: var(--danger);
+  border-color: rgba(225, 121, 97, 0.58);
+  background: var(--danger-bg);
+  color: var(--warning);
+  font-weight: 800;
 }
 
 .badge.planned {
@@ -226,6 +244,27 @@ h3 {
   font-size: 13px;
 }
 
+.hero-meta {
+  margin-top: 16px;
+}
+
+.notice {
+  border: 1px solid rgba(215, 181, 109, 0.32);
+  border-radius: 8px;
+  background: rgba(215, 181, 109, 0.08);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 16px 18px;
+  margin: 8px 0 28px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -237,6 +276,11 @@ h3 {
   background: rgba(215, 181, 109, 0.12);
   color: var(--text);
   font-weight: 700;
+}
+
+.button.secondary {
+  border-color: rgba(127, 167, 216, 0.42);
+  background: rgba(127, 167, 216, 0.1);
 }
 
 .detail-grid {
@@ -273,9 +317,21 @@ th {
   text-transform: uppercase;
 }
 
+.row-warning td {
+  background: var(--danger-bg);
+}
+
+.row-warning td:first-child {
+  border-left: 3px solid var(--warning);
+}
+
 .about {
   max-width: 840px;
   padding: 52px 0;
+}
+
+.about h2 {
+  margin-top: 30px;
 }
 
 .about p {
