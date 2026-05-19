@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-18T22:43:40+00:00",
+  "updated_at": "2026-05-19T09:02:11+00:00",
   "summary": {
     "mods_total": 6,
     "mods_completed": 3,
@@ -202,7 +202,7 @@
       "rows_total": 655,
       "rows_translated": 424,
       "token_errors": 0,
-      "last_updated": "2026-05-18T22:11:30+00:00",
+      "last_updated": "2026-05-19T09:02:05+00:00",
       "files": [
         {
           "filename": "CFP_l_english.yml",
@@ -306,11 +306,11 @@
       ]
     },
     {
-      "id": "ethnicities_portraits_expanded",
-      "name": "Ethnicities & Portraits Expanded",
-      "short_name": "EPE",
-      "description": "Karakter portreleri ve etnik görünüm çeşitliliğini genişleten kapsamlı görsel mod.",
-      "category": "Görsel / Portre",
+      "id": "medieval_arts",
+      "name": "Medieval Arts",
+      "short_name": "Medieval Arts",
+      "description": "Crusader Kings III için ortaçağ sanatları, kültürel görsellik ve tarihî atmosferi zenginleştiren mod.",
+      "category": "Görsel / Kültürel İçerik",
       "priority": 3,
       "workshop_id": "2452585382",
       "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2452585382",
