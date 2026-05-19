@@ -25,6 +25,7 @@ export default async function ModDetail({ params }: { params: Promise<{ id: stri
           <p className="lead">
             {project.description || "Bu mod için public registry açıklaması henüz eklenmedi."}
           </p>
+          {project.public_note ? <p className="notice compact">{project.public_note}</p> : null}
           <div className="meta hero-meta">
             <span>{project.category || "Kategori belirtilmedi"}</span>
             <span>Workshop ID: {project.workshop_id || "Yok"}</span>
@@ -49,38 +50,42 @@ export default async function ModDetail({ params }: { params: Promise<{ id: stri
       </section>
 
       <section className="detail-grid">
-        <div className="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Dosya</th>
-                <th>Durum</th>
-                <th>İlerleme</th>
-                <th>Satır</th>
-                <th>Boş</th>
-                <th>Token hatası</th>
-              </tr>
-            </thead>
-            <tbody>
-              {project.files.map((file) => (
-                <tr className={file.token_errors > 0 ? "row-warning" : undefined} key={file.filename}>
-                  <td>{file.filename}</td>
-                  <td>
-                    <StatusBadge status={file.status} tokenErrors={file.token_errors} />
-                  </td>
-                  <td>
-                    {file.percent}% <Progress value={file.percent} />
-                  </td>
-                  <td>
-                    {formatNumber(file.rows_translated)} / {formatNumber(file.rows_total)}
-                  </td>
-                  <td>{formatNumber(file.empty_rows)}</td>
-                  <td>{formatNumber(file.token_errors)}</td>
+        {project.show_files === false ? (
+          <div className="notice">Dosya detayları henüz paylaşılmıyor.</div>
+        ) : (
+          <div className="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dosya</th>
+                  <th>Durum</th>
+                  <th>İlerleme</th>
+                  <th>Satır</th>
+                  <th>Boş</th>
+                  <th>Token hatası</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {project.files.map((file) => (
+                  <tr className={file.token_errors > 0 ? "row-warning" : undefined} key={file.filename}>
+                    <td>{file.filename}</td>
+                    <td>
+                      <StatusBadge status={file.status} tokenErrors={file.token_errors} />
+                    </td>
+                    <td>
+                      {file.percent}% <Progress value={file.percent} />
+                    </td>
+                    <td>
+                      {formatNumber(file.rows_translated)} / {formatNumber(file.rows_total)}
+                    </td>
+                    <td>{formatNumber(file.empty_rows)}</td>
+                    <td>{formatNumber(file.token_errors)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
         <aside className="detail-panel">
           <h3>Özet</h3>
           <p className="lead">

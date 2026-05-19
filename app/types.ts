@@ -16,6 +16,7 @@ export type ProjectStatusRecord = {
   short_name?: string;
   description?: string;
   category?: string;
+  public_note?: string;
   priority?: number;
   workshop_id: string;
   steam_url: string;
@@ -27,6 +28,7 @@ export type ProjectStatusRecord = {
   rows_translated: number;
   token_errors: number;
   last_updated: string;
+  show_files?: boolean;
   files: FileStatus[];
 };
 

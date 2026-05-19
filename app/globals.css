@@ -258,6 +258,12 @@ h3 {
   margin: 8px 0 28px;
 }
 
+.notice.compact {
+  padding: 10px 12px;
+  margin: 10px 0 14px;
+  font-size: 14px;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;

@@ -35,6 +35,7 @@ export function ModCard({ project }: { project: ProjectStatusRecord }) {
       <p className="card-description">
         {project.description || "Bu mod için public registry açıklaması henüz eklenmedi."}
       </p>
+      {project.public_note ? <p className="notice compact">{project.public_note}</p> : null}
       <Progress value={project.percent} />
       <div className="meta">
         <span>{project.percent}%</span>

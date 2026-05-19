@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-05-19T09:02:11+00:00",
+  "updated_at": "2026-05-19T09:22:44+00:00",
   "summary": {
-    "mods_total": 6,
-    "mods_completed": 3,
-    "mods_translating": 2,
+    "mods_total": 3,
+    "mods_completed": 1,
+    "mods_translating": 1,
     "mods_needs_review": 1,
-    "files_total": 34,
-    "files_completed": 23,
-    "rows_total": 12581,
-    "rows_translated": 11903,
-    "percent": 95,
+    "files_total": 29,
+    "files_completed": 20,
+    "rows_total": 11813,
+    "rows_translated": 11617,
+    "percent": 98,
     "token_errors": 1
   },
   "projects": [
@@ -20,6 +20,7 @@
       "description": "Crusader Kings III için olay, kültür ve rol yapma içerikleri ekleyen kapsamlı etkinlik modu.",
       "category": "Etkinlik / Rol Yapma",
       "priority": 1,
+      "public_note": "Çeviri tamamlandı, son kontrol sürüyor.",
       "workshop_id": "2227658180",
       "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2227658180",
       "status": "needs_review",
@@ -30,6 +31,7 @@
       "rows_translated": 10599,
       "token_errors": 1,
       "last_updated": "2026-05-18T07:49:41+00:00",
+      "show_files": true,
       "files": [
         {
           "filename": "viet_activities_l_english.yml",
@@ -196,13 +198,14 @@
       "workshop_id": "2220098919",
       "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2220098919",
       "status": "translating",
-      "percent": 65,
+      "percent": 70,
       "files_total": 11,
-      "files_completed": 2,
+      "files_completed": 3,
       "rows_total": 655,
-      "rows_translated": 424,
+      "rows_translated": 459,
       "token_errors": 0,
-      "last_updated": "2026-05-19T09:02:05+00:00",
+      "last_updated": "2026-05-19T09:16:26+00:00",
+      "show_files": true,
       "files": [
         {
           "filename": "CFP_l_english.yml",
@@ -224,11 +227,11 @@
         },
         {
           "filename": "CFP_l_english_artifacts_events.yml",
-          "status": "planned",
-          "percent": 0,
+          "status": "completed",
+          "percent": 100,
           "rows_total": 35,
-          "rows_translated": 0,
-          "empty_rows": 35,
+          "rows_translated": 35,
+          "empty_rows": 0,
           "token_errors": 0
         },
         {
@@ -322,6 +325,7 @@
       "rows_translated": 559,
       "token_errors": 0,
       "last_updated": "2026-05-10T21:55:14+00:00",
+      "show_files": true,
       "files": [
         {
           "filename": "MA_localization_l_english.yml",
@@ -329,102 +333,6 @@
           "percent": 100,
           "rows_total": 559,
           "rows_translated": 559,
-          "empty_rows": 0,
-          "token_errors": 0
-        }
-      ]
-    },
-    {
-      "id": "workshop_3716251917",
-      "name": "Workshop 3716251917",
-      "priority": 9999,
-      "workshop_id": "3716251917",
-      "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3716251917",
-      "status": "translating",
-      "percent": 0,
-      "files_total": 1,
-      "files_completed": 0,
-      "rows_total": 449,
-      "rows_translated": 2,
-      "token_errors": 0,
-      "last_updated": "2026-05-10T20:15:06+00:00",
-      "files": [
-        {
-          "filename": "cmd_plus_l_english.yml",
-          "status": "translating",
-          "percent": 0,
-          "rows_total": 449,
-          "rows_translated": 2,
-          "empty_rows": 447,
-          "token_errors": 0
-        }
-      ]
-    },
-    {
-      "id": "workshop_3340544163",
-      "name": "Workshop 3340544163",
-      "priority": 9999,
-      "workshop_id": "3340544163",
-      "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3340544163",
-      "status": "completed",
-      "percent": 100,
-      "files_total": 3,
-      "files_completed": 3,
-      "rows_total": 236,
-      "rows_translated": 236,
-      "token_errors": 0,
-      "last_updated": "2026-05-11T10:23:17+00:00",
-      "files": [
-        {
-          "filename": "eba_buildings_l_english.yml",
-          "status": "completed",
-          "percent": 100,
-          "rows_total": 210,
-          "rows_translated": 210,
-          "empty_rows": 0,
-          "token_errors": 0
-        },
-        {
-          "filename": "eba_l_english.yml",
-          "status": "completed",
-          "percent": 100,
-          "rows_total": 5,
-          "rows_translated": 5,
-          "empty_rows": 0,
-          "token_errors": 0
-        },
-        {
-          "filename": "uba_greeting_l_english.yml",
-          "status": "completed",
-          "percent": 100,
-          "rows_total": 21,
-          "rows_translated": 21,
-          "empty_rows": 0,
-          "token_errors": 0
-        }
-      ]
-    },
-    {
-      "id": "workshop_3718999968",
-      "name": "Workshop 3718999968",
-      "priority": 9999,
-      "workshop_id": "3718999968",
-      "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3718999968",
-      "status": "completed",
-      "percent": 100,
-      "files_total": 1,
-      "files_completed": 1,
-      "rows_total": 83,
-      "rows_translated": 83,
-      "token_errors": 0,
-      "last_updated": "2026-05-11T21:30:27+00:00",
-      "files": [
-        {
-          "filename": "mar_artifacts_l_english.yml",
-          "status": "completed",
-          "percent": 100,
-          "rows_total": 83,
-          "rows_translated": 83,
           "empty_rows": 0,
           "token_errors": 0
         }
